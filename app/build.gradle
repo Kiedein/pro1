@@ -4,13 +4,19 @@ plugins {
 }
 
 android {
-namespace 'com.example.sampleapp'
-    compileSdk 33
+    // 1. Siguraduhin na nandoon ang namespace dahil tinanggal natin ang package sa Manifest
+    namespace 'com.example.sampleapp'
+    
+    // 2. I-update ang compileSdk mula 33 gawing 34
+    compileSdk 34
 
     defaultConfig {
         applicationId "com.example.sampleapp"
-        minSdk 21
+        minSdk 24
+        
+        // 3. I-update din ang targetSdk mula 33 gawing 34
         targetSdk 34
+        
         versionCode 1
         versionName "1.0"
 
