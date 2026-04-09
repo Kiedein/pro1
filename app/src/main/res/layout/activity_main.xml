@@ -23,7 +23,8 @@
         android:layout_height="300dp"
         android:src="@drawable/b20" 
         android:scaleType="fitCenter"
-        android:layout_marginBottom="32dp"/>
+        android:layout_marginBottom="32dp"
+        android:contentDescription="Splash Bouquet"/>
 
     <TextView
         android:layout_width="wrap_content"

@@ -5,7 +5,7 @@
     android:background="#FFE4F1">
 
     <LinearLayout
-        android:id="@+id/header_birthday"
+        android:id="@+id/header_anniv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
@@ -42,7 +42,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Birthday Collection"
+                android:text="Anniversary Selection"
                 android:textColor="#5E35B1"
                 android:textSize="18sp"
                 android:textStyle="bold"/>
@@ -52,7 +52,7 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/header_birthday"
+        android:layout_below="@id/header_anniv"
         android:layout_above="@+id/bottom_navigation"
         android:padding="12dp"
         android:scrollbars="none">
@@ -77,151 +77,13 @@
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="150dp"
-                    android:src="@drawable/b2"
+                    android:src="@drawable/b1"
                     android:scaleType="centerCrop"/>
                 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Blushing Lace"
-                    android:textColor="#5E35B1"
-                    android:textStyle="bold"
-                    android:layout_marginTop="8dp"/>
-                
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="4dp">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="$3,155"
-                        android:textColor="#5E35B1"
-                        android:textStyle="bold"/>
-                    <TextView
-                        android:layout_width="24dp"
-                        android:layout_height="24dp"
-                        android:text="+"
-                        android:textColor="#5E35B1"
-                        android:textSize="18sp"
-                        android:gravity="center"
-                        android:background="@drawable/circle_border"
-                        android:layout_alignParentEnd="true"/>
-                </RelativeLayout>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_columnWeight="1"
-                android:orientation="vertical"
-                android:background="@drawable/rounded_corner_bg"
-                android:padding="10dp"
-                android:layout_margin="6dp"
-                android:elevation="2dp">
-
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="150dp"
-                    android:src="@drawable/b15"
-                    android:scaleType="centerCrop"/>
-                
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Ivory Elegance"
-                    android:textColor="#5E35B1"
-                    android:textStyle="bold"
-                    android:layout_marginTop="8dp"/>
-                
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="4dp">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="$2,745"
-                        android:textColor="#5E35B1"
-                        android:textStyle="bold"/>
-                    <TextView
-                        android:layout_width="24dp"
-                        android:layout_height="24dp"
-                        android:text="+"
-                        android:textColor="#5E35B1"
-                        android:textSize="18sp"
-                        android:gravity="center"
-                        android:background="@drawable/circle_border"
-                        android:layout_alignParentEnd="true"/>
-                </RelativeLayout>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_columnWeight="1"
-                android:orientation="vertical"
-                android:background="@drawable/rounded_corner_bg"
-                android:padding="10dp"
-                android:layout_margin="6dp"
-                android:elevation="2dp">
-
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="150dp"
-                    android:src="@drawable/b18"
-                    android:scaleType="centerCrop"/>
-                
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Sunny Meadows"
-                    android:textColor="#5E35B1"
-                    android:textStyle="bold"
-                    android:layout_marginTop="8dp"/>
-                
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="4dp">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="$2,300"
-                        android:textColor="#5E35B1"
-                        android:textStyle="bold"/>
-                    <TextView
-                        android:layout_width="24dp"
-                        android:layout_height="24dp"
-                        android:text="+"
-                        android:textColor="#5E35B1"
-                        android:textSize="18sp"
-                        android:gravity="center"
-                        android:background="@drawable/circle_border"
-                        android:layout_alignParentEnd="true"/>
-                </RelativeLayout>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_columnWeight="1"
-                android:orientation="vertical"
-                android:background="@drawable/rounded_corner_bg"
-                android:padding="10dp"
-                android:layout_margin="6dp"
-                android:elevation="2dp">
-
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="150dp"
-                    android:src="@drawable/b22"
-                    android:scaleType="centerCrop"/>
-                
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Royal Amethyst"
+                    android:text="Midnight Passion"
                     android:textColor="#5E35B1"
                     android:textStyle="bold"
                     android:layout_marginTop="8dp"/>
@@ -234,6 +96,144 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="$2,900"
+                        android:textColor="#5E35B1"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:text="+"
+                        android:textColor="#5E35B1"
+                        android:textSize="18sp"
+                        android:gravity="center"
+                        android:background="@drawable/circle_border"
+                        android:layout_alignParentEnd="true"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:background="@drawable/rounded_corner_bg"
+                android:padding="10dp"
+                android:layout_margin="6dp"
+                android:elevation="2dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:src="@drawable/b12"
+                    android:scaleType="centerCrop"/>
+                
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Giant Heart"
+                    android:textColor="#5E35B1"
+                    android:textStyle="bold"
+                    android:layout_marginTop="8dp"/>
+                
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$5,900"
+                        android:textColor="#5E35B1"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:text="+"
+                        android:textColor="#5E35B1"
+                        android:textSize="18sp"
+                        android:gravity="center"
+                        android:background="@drawable/circle_border"
+                        android:layout_alignParentEnd="true"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:background="@drawable/rounded_corner_bg"
+                android:padding="10dp"
+                android:layout_margin="6dp"
+                android:elevation="2dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:src="@drawable/b6"
+                    android:scaleType="centerCrop"/>
+                
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Glitter Heart"
+                    android:textColor="#5E35B1"
+                    android:textStyle="bold"
+                    android:layout_marginTop="8dp"/>
+                
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$3,500"
+                        android:textColor="#5E35B1"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:text="+"
+                        android:textColor="#5E35B1"
+                        android:textSize="18sp"
+                        android:gravity="center"
+                        android:background="@drawable/circle_border"
+                        android:layout_alignParentEnd="true"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:background="@drawable/rounded_corner_bg"
+                android:padding="10dp"
+                android:layout_margin="6dp"
+                android:elevation="2dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:src="@drawable/b14"
+                    android:scaleType="centerCrop"/>
+                
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Classic Red Dome"
+                    android:textColor="#5E35B1"
+                    android:textStyle="bold"
+                    android:layout_marginTop="8dp"/>
+                
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$4,500"
                         android:textColor="#5E35B1"
                         android:textStyle="bold"/>
                     <TextView

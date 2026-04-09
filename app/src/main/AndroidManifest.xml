@@ -5,6 +5,7 @@
         android:allowBackup="true"
         android:icon="@drawable/b20" 
         android:label="Mi Amor"
+        android:roundIcon="@drawable/b20"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
 
@@ -17,10 +18,29 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".HomeActivity" />
-        <activity android:name=".BirthdayActivity" />
-        <activity android:name=".ShopActivity" />
-        <activity android:name=".ProfileActivity" />
+        <activity 
+            android:name=".HomeActivity"
+            android:exported="false" />
+
+        <activity 
+            android:name=".BirthdayActivity"
+            android:exported="false" />
+
+        <activity 
+            android:name=".AnnivActivity"
+            android:exported="false" />
+
+        <activity 
+            android:name=".GradActivity"
+            android:exported="false" />
+
+        <activity 
+            android:name=".ShopActivity"
+            android:exported="false" />
+
+        <activity 
+            android:name=".ProfileActivity"
+            android:exported="false" />
 
     </application>
 

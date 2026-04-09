@@ -8,18 +8,21 @@ import androidx.appcompat.app.AppCompatActivity
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        // Ikinokonekta nito ang Kotlin code sa activity_main.xml na layout
         setContentView(R.layout.activity_main)
 
-        // 1. Dito natin kinukuha ang button mula sa XML (activity_main.xml)
+        // Hinahanap ang "Get Started" button gamit ang ID na btn_get_started
         val btnGetStarted = findViewById<Button>(R.id.btn_get_started)
 
-        // 2. Dito natin inilalagay ang "Action" kapag pinindot ang button
+        // Naghihintay ng click event mula sa user
         btnGetStarted.setOnClickListener {
-            // Ang Intent ang nag-uugnay sa dalawang screens
+            // Gumagawa ng "Intent" para lumipat mula MainActivity papuntang HomeActivity
             val intent = Intent(this, HomeActivity::class.java)
             startActivity(intent)
             
-            // Tinatawag natin ang finish() para hindi na mabalikan ang Splash Screen kapag nag-back ang user
+            /* * Tinatawag natin ang finish() para kapag nasa Home Screen na ang user,
+             * hindi na siya babalik sa Splash Screen kapag pinindot ang 'Back' button.
+             */
             finish()
         }
     }
