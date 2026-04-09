@@ -4,8 +4,8 @@ plugins {
 }
 
 android {
-    namespace 'com.example.sampleapp'
-    compileSdk 34
+namespace 'com.example.sampleapp'
+    compileSdk 33
 
     defaultConfig {
         applicationId "com.example.sampleapp"
