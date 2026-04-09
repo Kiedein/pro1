@@ -10,14 +10,17 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        // Hanapin ang Get Started button na ginawa natin sa XML
+        // 1. Dito natin kinukuha ang button mula sa XML (activity_main.xml)
         val btnGetStarted = findViewById<Button>(R.id.btn_get_started)
 
-        // Kapag pinindot, pumunta sa HomeActivity
+        // 2. Dito natin inilalagay ang "Action" kapag pinindot ang button
         btnGetStarted.setOnClickListener {
+            // Ang Intent ang nag-uugnay sa dalawang screens
             val intent = Intent(this, HomeActivity::class.java)
             startActivity(intent)
-            finish() // Isara ang splash screen para hindi mabalikan kapag nag-back
+            
+            // Tinatawag natin ang finish() para hindi na mabalikan ang Splash Screen kapag nag-back ang user
+            finish()
         }
     }
 }
