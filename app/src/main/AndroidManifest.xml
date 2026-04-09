@@ -1,53 +1,21 @@
-package com.example.sampleapp
-
-import android.content.Intent
-import android.os.Bundle
-import android.widget.Button
-import android.widget.LinearLayout
-import androidx.appcompat.app.AppCompatActivity
-
-class HomeActivity : AppCompatActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        // Ikinokonekta ang code sa activity_home.xml
-        setContentView(R.layout.activity_home)
-
-        // --- CATEGORY BUTTONS NAVIGATION ---
-        
-        // Navigation para sa Birthday Category
-        val btnBirthday = findViewById<Button>(R.id.btn_birthday)
-        btnBirthday.setOnClickListener {
-            startActivity(Intent(this, BirthdayActivity::class.java))
-        }
-
-        // Navigation para sa Anniversary Category
-        val btnAnniv = findViewById<Button>(R.id.btn_anniv)
-        btnAnniv.setOnClickListener {
-            startActivity(Intent(this, AnnivActivity::class.java))
-        }
-
-        // Navigation para sa Graduation Category
-        val btnGrad = findViewById<Button>(R.id.btn_grad)
-        btnGrad.setOnClickListener {
-            startActivity(Intent(this, GradActivity::class.java))
-        }
-
-        // --- BOTTOM NAVIGATION AREA ---
-
-        // Shop Navigation (Home lang ang entry point natin base sa structure mo)
-        val navShop = findViewById<LinearLayout>(R.id.nav_shop)
-        navShop.setOnClickListener {
-            startActivity(Intent(this, ShopActivity::class.java))
-        }
-
-        // Profile Navigation
-        val navProfile = findViewById<LinearLayout>(R.id.nav_profile)
-        navProfile.setOnClickListener {
-            startActivity(Intent(this, ProfileActivity::class.java))
-        }
-
-        /* * Note: Ang nav_home ay hindi na kailangan ng listener dito 
-         * dahil ito na mismo ang Home screen.
-         */
-    }
-}
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <application
+        android:allowBackup="true"
+        android:label="Flower Shop"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat">
+        <activity android:name=".MainActivity" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".HomeActivity" android:exported="false" />
+        <activity android:name=".BirthdayActivity" android:exported="false" />
+        <activity android:name=".AnnivActivity" android:exported="false" />
+        <activity android:name=".GradActivity" android:exported="false" />
+        <activity android:name=".ShopActivity" android:exported="false" />
+        <activity android:name=".ProfileActivity" android:exported="false" />
+    </application>
+</manifest>
