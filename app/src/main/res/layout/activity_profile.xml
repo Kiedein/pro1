@@ -41,38 +41,27 @@
         android:layout_above="@+id/bottom_navigation"
         android:orientation="vertical">
 
-        <LinearLayout
+       <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:gravity="center"
-            android:paddingTop="32dp"
-            android:paddingBottom="32dp"
-            android:background="#CE93D8">
+            android:padding="24dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
 
             <ImageView
-                android:layout_width="120dp"
-                android:layout_height="120dp"
-                android:src="@drawable/profile"
-                android:scaleType="centerCrop"
-                android:background="@drawable/circle_border"/>
-
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/mail"
+                app:tint="#5E35B1"/>
+            
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="DANIELA ARQUERO"
+                android:text="arcdan@gmail.com"
+                android:layout_marginStart="24dp"
                 android:textColor="#5E35B1"
-                android:textSize="22sp"
-                android:textStyle="bold"
-                android:layout_marginTop="16dp"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="123-456-789"
-                android:textColor="#5E35B1"
-                android:textSize="16sp"
-                android:layout_marginTop="4dp"/>
+                android:textSize="18sp"
+                android:textStyle="bold"/>
         </LinearLayout>
 
         <View
@@ -140,16 +129,18 @@
 
     </LinearLayout>
 
-    <LinearLayout
+<LinearLayout
         android:id="@+id/bottom_navigation"
         android:layout_width="match_parent"
         android:layout_height="65dp"
         android:layout_alignParentBottom="true"
         android:orientation="horizontal"
         android:background="#AB47BC"
-        android:weightSum="3">
+        android:weightSum="3"
+        android:elevation="8dp">
 
         <LinearLayout
+            android:id="@+id/nav_home"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -158,7 +149,8 @@
             <ImageView
                 android:layout_width="28dp"
                 android:layout_height="28dp"
-                android:src="@drawable/home"/>
+                android:src="@drawable/home"
+                android:contentDescription="Home Icon"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -168,6 +160,7 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/nav_shop"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -176,7 +169,8 @@
             <ImageView
                 android:layout_width="28dp"
                 android:layout_height="28dp"
-                android:src="@drawable/shop"/>
+                android:src="@drawable/shop"
+                android:contentDescription="Shop Icon"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -186,6 +180,7 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/nav_profile"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -194,7 +189,8 @@
             <ImageView
                 android:layout_width="28dp"
                 android:layout_height="28dp"
-                android:src="@drawable/profile"/>
+                android:src="@drawable/profile"
+                android:contentDescription="Profile Icon"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -203,5 +199,4 @@
                 android:textSize="12sp"/>
         </LinearLayout>
     </LinearLayout>
-
 </RelativeLayout>
