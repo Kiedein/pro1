@@ -33,7 +33,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="<"
+                android:text="&lt;"
                 android:textColor="#5E35B1"
                 android:textSize="20sp"
                 android:textStyle="bold"
@@ -142,98 +142,6 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="$2,200"
-                        android:textColor="#5E35B1"
-                        android:textStyle="bold"/>
-                    <TextView
-                        android:layout_width="24dp"
-                        android:layout_height="24dp"
-                        android:text="+"
-                        android:textColor="#5E35B1"
-                        android:textSize="18sp"
-                        android:gravity="center"
-                        android:background="@drawable/circle_border"
-                        android:layout_alignParentEnd="true"/>
-                </RelativeLayout>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_columnWeight="1"
-                android:orientation="vertical"
-                android:background="@drawable/rounded_corner_bg"
-                android:padding="10dp"
-                android:layout_margin="6dp"
-                android:elevation="2dp">
-
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="150dp"
-                    android:src="@drawable/b9"
-                    android:scaleType="centerCrop"/>
-                
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Honor Graduate"
-                    android:textColor="#5E35B1"
-                    android:textStyle="bold"
-                    android:layout_marginTop="8dp"/>
-                
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="4dp">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="$1,500"
-                        android:textColor="#5E35B1"
-                        android:textStyle="bold"/>
-                    <TextView
-                        android:layout_width="24dp"
-                        android:layout_height="24dp"
-                        android:text="+"
-                        android:textColor="#5E35B1"
-                        android:textSize="18sp"
-                        android:gravity="center"
-                        android:background="@drawable/circle_border"
-                        android:layout_alignParentEnd="true"/>
-                </RelativeLayout>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_columnWeight="1"
-                android:orientation="vertical"
-                android:background="@drawable/rounded_corner_bg"
-                android:padding="10dp"
-                android:layout_margin="6dp"
-                android:elevation="2dp">
-
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="150dp"
-                    android:src="@drawable/b13"
-                    android:scaleType="centerCrop"/>
-                
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Sunshine Wrap"
-                    android:textColor="#5E35B1"
-                    android:textStyle="bold"
-                    android:layout_marginTop="8dp"/>
-                
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="4dp">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="$1,950"
                         android:textColor="#5E35B1"
                         android:textStyle="bold"/>
                     <TextView

@@ -5,29 +5,28 @@ import android.os.Bundle
 import android.widget.LinearLayout
 import androidx.appcompat.app.AppCompatActivity
 
-class BirthdayActivity : AppCompatActivity() {
+class AnnivActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        // Ikinokonekta ang logic sa activity_birthday.xml
-        setContentView(R.layout.activity_birthday)
+        // Ikinokonekta ang logic sa activity_anniv.xml
+        setContentView(R.layout.activity_anniv)
 
         // --- NAVIGATION LOGIC ---
 
-        /* * Hanapin ang Home button sa Bottom Navigation.
-         * Dahil ang Home ang "Hub", dito tayo laging babalik.
-         */
+        // Hanapin ang Home button sa Bottom Navigation bar
         val navHome = findViewById<LinearLayout>(R.id.nav_home)
         
         navHome.setOnClickListener {
+            // Pag-trigger ng Intent pabalik sa HomeActivity
             val intent = Intent(this, HomeActivity::class.java)
             startActivity(intent)
             
-            // Isinasara ang screen na ito para malinis ang memory ng phone
+            // Tatapusin ang activity na ito para hindi mag-stack ang screens
             finish()
         }
 
-        /* * Note: Ang nav_shop at nav_profile ay hindi natin lalagyan ng logic 
-         * dito para masunod ang rule na "Home state is the only one to access the shop".
+        /* * Note: Walang click listener para sa nav_shop at nav_profile 
+         * dito para mapanatili ang simplified flow na hiningi mo.
          */
     }
 }
